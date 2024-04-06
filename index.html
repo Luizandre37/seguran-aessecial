@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Controle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+    <div id="supervisor-info">
+        <img src="img/essencial-segurança.png" alt="Foto do Supervisor">
+        <h2>Supervisor</h2>
+        <p id="supervisor-name">Nome do Supervisor: Salatiel</p>
+    </div>
+
+    <h1>Sistema de Controle de Posto Oeste</h1>
+
+    <div id="vigilante-form">
+        <h2>Cadastro de Vigilante</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome">
+
+        <label for="matricula">Matrícula:</label>
+        <input type="text" id="matricula">
+
+        <label for="posto">Posto:</label>
+        <input type="text" id="posto">
+
+        <label for="arma">Arma:</label>
+        <input type="text" id="arma">
+
+        <label for="colete">Número do Colete Balístico:</label>
+        <input type="text" id="colete">
+
+        <label for="dataValidadeVigilante">Data de Validade:</label>
+        <input type="date" id="dataValidadeVigilante">
+
+        <label for="atividades">Atividades Realizadas no Posto:</label>
+        <textarea id="atividades" rows="4"></textarea>
+
+        <button onclick="cadastrarVigilante()">Cadastrar</button>
+    </div>
+
+    <div id="acoes">
+        <div class="grupo-acoes">
+            <h3>Ações Operacionais</h3>
+            <button onclick="implantacao()">Implantação</button>
+            <button onclick="recolhimento()">Recolhimento</button>
+            <button onclick="remanejamento()">Remanejamento</button>
+            <label for="dataValidadeFerias">Data de Validade Férias:</label>
+            <input type="date" id="dataValidadeFerias">
+            
+            <label for="dataValidadeUniforme">Data de Validade Uniforme:</label>
+            <input type="date" id="dataValidadeUniforme">
+            <button onclick="encerramentoPosto()">Ence. de Posto</button>
+            <button onclick="ocorrencia()">Ocorrência</button>
+        </div>
+    
+        <div class="grupo-acoes">
+            <h3>Ações de Equipamentos e Documentação</h3>
+            <button onclick="numeracaoArmaColete()">Numeração de Armamento e Colete</button>
+            <button onclick="equipamentosNovos()">Equipamentos Novos</button>
+            <button onclick="procedimentoNovoCliente()">Procedimento Novo de Cliente</button>
+            <button onclick="documentosEntregues()">Documentos Entregues</button>
+        </div>
+    </div>
+
+    <div id="relatorio">
+        <h2>Relatório Geral</h2>
+        <ul id="lista-relatorio"></ul>
+    </div>
+
+    <div id="email-whatsapp">
+        <h2>Enviar Relatório por Email e WhatsApp</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Seu email">
+
+        <label for="whatsapp">WhatsApp:</label>
+        <input type="text" id="whatsapp" placeholder="Seu número de WhatsApp">
+
+        <button onclick="enviarRelatorio()">Enviar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

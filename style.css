@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('caminho/para/imagem-de-fundo.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+#app {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+#supervisor-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    background-color: #000;
+    color: #ffd700;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1; 
+}
+
+#vigilante-form {
+    margin-top: 90px; 
+   padding: auto;
+}
+
+
+#supervisor-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 5px; /* Reduzindo a margem inferior */
+}
+
+#supervisor-info h2 {
+    margin-top: 5px; /* Reduzindo a margem superior */
+    font-size: 18px; /* Ajustando o tamanho da fonte para maior legibilidade */
+}
+
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #ffd700;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #ffd700;
+}
+
+button {
+    background-color: #ffd700;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
+#acoes {
+    margin-top: 20px;
+}
+
+#acoes button {
+    background-color: #ffd700;
+    color: #000;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#acoes button:hover {
+    background-color: #ffa500;
+}
+
+#relatorio {
+    margin-top: 20px;
+}
+
+#lista-relatorio {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista-relatorio li {
+    margin-bottom: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    #app {
+        max-width: 100%;
+    }
+
+    #supervisor-info {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    #supervisor-info img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #vigilante-form button,
+    #acoes button {
+        width: 100%;
+    }
+}
+.grupo-acoes button {
+    width: 100%;
+    margin-bottom: 15px; /* Aumentando o espaço entre os botões para 15px */
+}
+/* Estilo para o formulário de envio por email e WhatsApp */
+#email-whatsapp {
+    margin-top: 20px;
+}
+
+#email-whatsapp h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#email-whatsapp label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#email-whatsapp input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#email-whatsapp button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#email-whatsapp button:hover {
+    background-color: #0056b3;
+}
